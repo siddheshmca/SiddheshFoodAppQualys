@@ -8,7 +8,7 @@ public class FoodController {
 
 	@RequestMapping("/hello")
 	public String welcomeUser() {
-		String message = "Welcome Siddhesh";
+		String message = "Welcome Sid Restaurant";
 		return message;
 	}
 
