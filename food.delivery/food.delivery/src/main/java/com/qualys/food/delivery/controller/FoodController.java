@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FoodController {
 
-	
 	public String welcomeUser() {
-		String message = "Ankita";
-		return message;
+		String name = "Siddhesh";
+		return name;
 	}
 	
 	@RequestMapping("/name")
