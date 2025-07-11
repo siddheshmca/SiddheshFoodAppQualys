@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name = "Restaurant")
 public class Restaurant {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int restaurant_id;
     @Column
     private String restaurant_name;
@@ -63,4 +63,10 @@ public class Restaurant {
         this.restaurant_address = restaurant_address;
     }
 
+    public Restaurant(int restaurant_id, String restaurant_name, String restaurant_location, String restaurant_address) {
+        this.restaurant_id = restaurant_id;
+        this.restaurant_name = restaurant_name;
+        this.restaurant_location = restaurant_location;
+        this.restaurant_address = restaurant_address;
+    }
 }
